@@ -1,0 +1,133 @@
+.footer {
+    padding: 60px 0 20px;
+
+    @media (min-width: $tablet-width) {
+        padding: 100px 0 40px;
+    }
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 42px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(40, 43, 34, 0.2);
+
+    @media (min-width: $tablet-width) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding-bottom: 100px;
+    }
+
+    @media (min-width: $large-width) {
+        align-items: flex-start;
+    }
+}
+
+.footer__box {
+    @media (min-width: $tablet-width) {
+        width: 50%;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: initial;
+        max-width: 33%;
+    }
+}
+
+.footer__logo {
+    margin-bottom: 25px;
+    display: block;
+
+    @media (min-width: $tablet-width) {
+        width: 130px;
+        height: 57px;
+    }
+}
+
+.footer__wrap {
+    display: flex;
+    align-items: center;
+
+    span {
+        margin-right: 10px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        opacity: 0.5;
+    }
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+
+    .nav__item {
+        width: 50%;
+        font-size: 16px;
+
+        &:nth-child(even) {
+            padding-left: 15px;
+        }
+    }
+
+    @media (min-width: $tablet-width) {
+        width: 50%;
+
+        .nav__link {
+            font-size: 16px;
+        }
+    }
+
+    @media (min-width: $desktop-width) {
+        max-width: 33%;
+    }
+
+    @media (min-width: $large-width) {
+        row-gap: 25px;
+    }
+}
+
+.footer__contacts {
+    .header__phone {
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+    @media (min-width: $tablet-width) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    @media (min-width: $desktop-width) {
+        flex-direction: column;
+        width: 280px;
+    }
+}
+
+.footer__button {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $tablet-width) {
+        width: 50%;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 100%;
+    }
+}

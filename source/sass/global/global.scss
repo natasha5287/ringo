@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: $dark;
+    background-color: $white;
+
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer,
+header {
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+input,
+button,
+textarea {
+    border: none;
+    background: none;
+    outline: none;
+    color: $white;
+    font-size: 16px;
+    font-family: "Raleway", Arial, sans-serif;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    padding: 0 10px;
+    max-width: 1240px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+        padding: 0 20px;
+    }
+}
+
+.input {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+// Animations
+
+.anim-show {
+    display: inline-block;
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.anim-img {
+    transform: translate(100%, 0);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.anim-img-right {
+    transform: translate(-100%, 0);
+}
+
+.anim-show.active,
+.active .anim-show,
+.anim-img.active,
+.active .anim-img {
+    opacity: 1;
+    transform: translate(0, 0);
+}

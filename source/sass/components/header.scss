@@ -1,0 +1,228 @@
+.header {
+    position: relative;
+    background-color: $white;
+    padding: 15px 10px;
+
+    @media (min-width: $tablet-width) {
+        padding: 20px;
+    }
+
+    &.opened {
+        .header__container {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 35px 10px 10px;
+            width: 100%;
+            min-height: 495px;
+            top: 74px;
+            left: 0;
+            z-index: 2;
+            background-color: $white;
+
+            @media (min-width: $tablet-width) {
+                position: initial;
+                width: auto;
+                min-height: inherit;
+                flex-direction: row;
+                padding: 0;
+            }
+        }
+
+        .header__nav {
+            margin-bottom: 40px;
+
+            @media (min-width: $tablet-width) {
+                display: block;
+                position: absolute;
+                width: 50%;
+                top: 0;
+                right: 0;
+                padding: 130px 25px 30px;
+                background-color: $white;
+            }
+        }
+
+        .header__contact {
+            margin-top: auto;
+            margin-bottom: 30px;
+
+            @media (min-width: $tablet-width) {
+                margin: 0;
+            }
+        }
+
+        .header__toggle {
+
+            span {
+                background-color: transparent;
+                transition: background-color 0.3s;
+
+                &::before {
+                    transition: all 0.3s;
+
+                    transform: rotate(45deg);
+                }
+
+                &::after {
+                    transition: all 0.3s;
+
+                    transform: rotate(-45deg);
+                    top: 8px;
+                }
+            }
+        }
+    }
+}
+
+.header__logo {
+    width: 100px;
+    height: 44px;
+
+    @media (min-width: $tablet-width) {
+        width: 122px;
+        height: 53px;
+        margin-right: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-right: 0;
+    }
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+        column-gap: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+        column-gap: 40px;
+    }
+
+    @media (min-width: $large-width) {
+        max-width: 1200px;
+        margin: 0 auto;
+        column-gap: 145px;
+    }
+}
+
+.header__container {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        column-gap: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+        align-items: center;
+    }
+
+    @media (min-width: $large-width) {
+        width: 935px;
+        justify-content: space-between;
+        column-gap: 60px;
+    }
+}
+
+.header__nav {
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+        display: block;
+    }
+}
+
+.header__social {
+    display: flex;
+    column-gap: 15px;
+    z-index: 1;
+
+    @media (min-width: $large-width) {
+        margin-left: auto;
+    }
+}
+
+.header__phone {
+    position: relative;
+    font-family: "Lato";
+    font-weight: 600;
+    font-size: 20px;
+    color: $green;
+    display: flex;
+    column-gap: 7px;
+    transition: color 0.3s ease-in-out;
+
+    svg {
+        fill: $green;
+        transition: fill 0.3s ease-in-out;
+    }
+
+    &:hover {
+        color: $brown;
+
+        svg {
+            fill: $brown;
+        }
+    }
+}
+
+.header__project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+}
+
+.header__toggle {
+    width: 34px;
+    height: 34px;
+    padding: 9px 4px;
+    z-index: 2;
+
+    span {
+        position: relative;
+        display: block;
+        top: calc(50% - 16px);
+        width: 26px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: $dark;
+        transition: all 0.3s;
+
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            width: 26px;
+            height: 2px;
+            left: 0;
+            background-color: $dark;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        &::before {
+            top: 8px;
+        }
+
+        &::after {
+            top: 16px;
+        }
+    }
+
+    @media (min-width: $desktop-width) {
+        display: none;
+    }
+}

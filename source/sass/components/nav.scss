@@ -1,0 +1,42 @@
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+
+    @media (min-width: $desktop-width) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        max-width: 460px;
+    }
+
+    @media (min-width: $large-width) {
+        column-gap: 40px;
+        max-width: 550px;
+    }
+}
+
+.nav__item {
+    @media (min-width: $tablet-width) and (max-width: 999px) {
+        margin-bottom: 10px;
+    }
+}
+
+.nav__link {
+    font-weight: 500;
+    line-height: 16px;
+    color: $dark;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: $brown;
+    }
+
+    @media (min-width: $tablet-width) {
+        font-size: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Ringo Ukraine</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+
+            <img class="header__logo" src="img/logo.svg" width="100" height="44" alt="логотип компанії Ringo Ukrain.">
+
+            <div class="header__container">
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link menu-link" href="#activities">Напрямки</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link menu-link" href="#about">Про компанію</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link menu-link" href="#advantages">Переваги</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link menu-link" href="#stages">Етапи роботи</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="header__social social">
+                    <li class="social__item">
+                        <a class="social__link" href="https://www.instagram.com/">
+                            <span class="visually-hidden">Наш інстаграм</span>
+                            <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+                                <use xlink:href="./img/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" href="https://m.facebook.com/">
+                            <span class="visually-hidden">Наш фейсбук</span>
+                            <svg aria-hidden="true" viewBox="0 0 10 21" width="10" height="21">
+                                <use xlink:href="./img/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header__contact">
+                    <a class="header__phone" href="tel:380676615415">
+                        <svg aria-hidden="true" viewBox="0 0 14 22" width="14" height="22">
+                            <use xlink:href="./img/sprite.svg#phone"></use>
+                        </svg>
+                        +380 67661 5415
+                    </a>
+                </div>
+                <a class="button header__project" href="">Обговорити проект</a>
+            </div>
+
+            <button class="header__toggle" type="button">
+                <span class="visually-hidden">відкрити меню</span>
+                <span></span> <!-- for visual button -->
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="swiper banner">
+
+            <div class="swiper-wrapper banner__wrapper">
+                <div class="swiper-slide banner__item">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1600px)"
+                            srcset="./img/banner1-large.webp 1x, ./img/banner1-large@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 1000px)"
+                            srcset="./img/banner1-desktop.webp 1x, ./img/banner1-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 640px)"
+                            srcset="./img/banner1-tablet.webp 1x, ./img/banner1-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="./img/banner1.webp 1x, ./img/banner1@2x.webp 2x">
+                        <source media="(min-width: 1600px)"
+                            srcset="./img/banner1-large.jpg 1x, ./img/banner1-large@2x.jpg 2x">
+                        <source media="(min-width: 1000px)"
+                            srcset="./img/banner1-desktop.jpg 1x, ./img/banner1-desktop@2x.jpg 2x">
+                        <source media="(min-width: 640px)"
+                            srcset="./img/banner1-tablet.jpg 1x, ./img/banner1-tablet@2x.jpg 2x">
+                        <img class="banner__img" src="./img/banner1.jpg" srcset="./img/banner1@2x.jpg"
+                            alt="чоловік у будівельних окулярах">
+                    </picture>
+                    <div class="banner__gradient">
+                        <div class="banner__wrap">
+                            <h2 class="banner__title text-l anim-title">
+                                <span class="anim-show">комплексне меблювання інтреєрів</span>
+                            </h2>
+                            <p class="banner__text">Ми створені виконувати об`єктні задачі комплексного меблювання
+                                житлових та комерційних приміщень.
+                                Наш колектив націлений на результат -
+                                вчасно реалізувати проект на найвищому рівні. Ми забезпечуємо ваш спокій та беремо на
+                                себе вирішення будь-яких задач.
+
+                            </p>
+                            <button class="banner__btn button" type="button">Обговорити проект</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide banner__item">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1600px)"
+                            srcset="./img/banner2-large.webp 1x, ./img/banner2-large@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 1000px)"
+                            srcset="./img/banner2-desktop.webp 1x, ./img/banner2-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 640px)"
+                            srcset="./img/banner2-tablet.webp 1x, ./img/banner2-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="./img/banner2.webp 1x, ./img/banner2@2x.webp 2x">
+                        <source media="(min-width: 1600px)"
+                            srcset="./img/banner2-large.jpg 1x, ./img/banner2-large@2x.jpg 2x">
+                        <source media="(min-width: 1000px)"
+                            srcset="./img/banner2-desktop.jpg 1x, ./img/banner2-desktop@2x.jpg 2x">
+                        <source media="(min-width: 640px)"
+                            srcset="./img/banner2-tablet.jpg 1x, ./img/banner2-tablet@2x.jpg 2x">
+                        <img class="banner__img" src="./img/banner2.jpg" srcset="./img/banner2@2x.jpg"
+                            alt="фотографія дизайну інтер'єру">
+                    </picture>
+                    <div class="banner__gradient">
+                        <div class="banner__wrap">
+                            <h2 class="banner__title text-l anim-title">
+                                <span class="anim-show">Дизайн інтр'єру</span>
+                            </h2>
+                            <p class="banner__text">В дизайні ми поєднуємо стильні ідеї з практичною ергономікою та
+                                можливістю точно реалізувати візуалізацію.
+                                Наш інтер`єр - це ваш індивідуальний простір, зона комфорту в житті та роботі
+                            </p>
+                            <button class="banner__btn button" type="button">Обговорити проект</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide banner__item">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1600px)"
+                            srcset="./img/banner3-large.webp 1x, ./img/banner3-large@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 1000px)"
+                            srcset="./img/banner3-desktop.webp 1x, ./img/banner3-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 640px)"
+                            srcset="./img/banner3-tablet.webp 1x, ./img/banner3-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="./img/banner3.webp 1x, ./img/banner3@2x.webp 2x">
+                        <source media="(min-width: 1600px)"
+                            srcset="./img/banner3-large.jpg 1x, ./img/banner3-large@2x.jpg 2x">
+                        <source media="(min-width: 1000px)"
+                            srcset="./img/banner3-desktop.jpg 1x, ./img/banner3-desktop@2x.jpg 2x">
+                        <source media="(min-width: 640px)"
+                            srcset="./img/banner3-tablet.jpg 1x, ./img/banner3-tablet@2x.jpg 2x">
+                        <img class="banner__img" src="./img/banner3.jpg" srcset="./img/banner3@2x.jpg"
+                            alt="фотографія дизайну спальні">
+                    </picture>
+                    <div class="banner__gradient">
+                        <div class="banner__wrap">
+                            <h2 class="banner__title text-l anim-title">
+                                <span class="anim-show">виробництво<br> меблів</span>
+                            </h2>
+                            <p class="banner__text">Ми виконуємо комплексне виготовлення корпусних меблів для житлових і
+                                комерційних приміщень, забезпечимо Вас якісним меблевим продуктом власного виробництва.
+                            </p>
+                            <button class="banner__btn button" type="button">Обговорити проект</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev">
+                <svg aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
+                    <use class="banner__icon" xlink:href="./img/sprite.svg#arrow">
+                    </use>
+                </svg>
+            </div>
+            <div class="swiper-button-next">
+                <svg aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
+                    <use class="banner__icon" xlink:href="./img/sprite.svg#arrow">
+                    </use>
+                </svg>
+            </div>
+
+        </section>
+
+        <section class="activities" id="activities">
+            <div class="container">
+
+                <h2 class="activities__title text-m anim-title">
+                    <span class="anim-show">Основні напрямки</span>
+                </h2>
+                <ol class="activities__list">
+                    <li class="activities__item">
+                        <span class="activities__number text">01</span>
+                        <h3 class="activities__subtitle text">Дизайн інтерєру</h3>
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1600px)"
+                                srcset="./img/activities1-large.webp 1x, ./img/activities1-large@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 1000px)"
+                                srcset="./img/activities1-desktop.webp 1x, ./img/activities1-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 640px)"
+                                srcset="./img/activities1-tablet.webp 1x, ./img/activities1-tablet@2x.webp 2x">
+                            <source type="image/webp" srcset="./img/activities1.webp 1x, ./img/activities1@2x.webp 2x">
+                            <source media="(min-width: 1600px)"
+                                srcset="./img/activities1-large.jpg 1x, ./img/activities1-large@2x.jpg 2x">
+                            <source media="(min-width: 1000px)"
+                                srcset="./img/activities1-desktop.jpg 1x, ./img/activities1-desktop@2x.jpg 2x">
+                            <source media="(min-width: 640px)"
+                                srcset="./img/activities1-tablet.jpg 1x, ./img/activities1-tablet@2x.jpg 2x">
+                            <img class="activities__img" src="./img/activities1.jpg" srcset="./img/activities1@2x.jpg"
+                                loading="lazy" alt="вітальня у сірих кольорах">
+                        </picture>
+                    </li>
+                    <li class="activities__item">
+                        <span class="activities__number text">02</span>
+                        <h3 class="activities__subtitle text">Виробництво меблів</h3>
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1600px)"
+                                srcset="./img/activities2-large.webp 1x, ./img/activities2-large@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 1000px)"
+                                srcset="./img/activities2-desktop.webp 1x, ./img/activities2-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 640px)"
+                                srcset="./img/activities2-tablet.webp 1x, ./img/activities2-tablet@2x.webp 2x">
+                            <source type="image/webp" srcset="./img/activities2.webp 1x, ./img/activities2@2x.webp 2x">
+                            <source media="(min-width: 1600px)"
+                                srcset="./img/activities2-large.jpg 1x, ./img/activities2-large@2x.jpg 2x">
+                            <source media="(min-width: 1000px)"
+                                srcset="./img/activities2-desktop.jpg 1x, ./img/activities2-desktop@2x.jpg 2x">
+                            <source media="(min-width: 640px)"
+                                srcset="./img/activities2-tablet.jpg 1x, ./img/activities2-tablet@2x.jpg 2x">
+                            <img class="activities__img" src="./img/activities2.jpg" srcset="./img/activities2@2x.jpg"
+                                loading="lazy" alt="вітальня у сірих кольорах">
+                        </picture>
+                    </li>
+                    <li class="activities__item">
+                        <span class="activities__number text">03</span>
+                        <h3 class="activities__subtitle text">Комплексне меблювання</h3>
+                        <picture>
+                            <source type="image/webp" media="(min-width: 1600px)"
+                                srcset="./img/activities3-large.webp 1x, ./img/activities3-large@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 1000px)"
+                                srcset="./img/activities3-desktop.webp 1x, ./img/activities3-desktop@2x.webp 2x">
+                            <source type="image/webp" media="(min-width: 640px)"
+                                srcset="./img/activities3-tablet.webp 1x, ./img/activities3-tablet@2x.webp 2x">
+                            <source type="image/webp" srcset="./img/activities3.webp 1x, ./img/activities3@2x.webp 2x">
+                            <source media="(min-width: 1600px)"
+                                srcset="./img/activities3-large.jpg 1x, ./img/activities3-large@2x.jpg 2x">
+                            <source media="(min-width: 1000px)"
+                                srcset="./img/activities3-desktop.jpg 1x, ./img/activities3-desktop@2x.jpg 2x">
+                            <source media="(min-width: 640px)"
+                                srcset="./img/activities3-tablet.jpg 1x, ./img/activities3-tablet@2x.jpg 2x">
+                            <img class="activities__img" src="./img/activities3.jpg" srcset="./img/activities3@2x.jpg"
+                                loading="lazy" alt="чоловік у будівельних окулярах">
+                        </picture>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="offers">
+            <div class="container">
+                <h2 class="offers__title text-m anim-title">
+                    <span class="anim-show">Ми забезпечемо вас</span>
+                </h2>
+                <ul class="offers__list">
+                    <li class="offers__item">
+                        <svg class="offers__icon" aria-hidden="true" viewBox="0 0 48 50" width="48" height="50">
+                            <use xlink:href="./img/sprite.svg#wardrobe"></use>
+                        </svg>
+                        <p class="offers__text">Меблями</p>
+                    </li>
+                    <li class="offers__item">
+                        <svg class="offers__icon" aria-hidden="true" viewBox="0 0 32 50" width="32" height="50">
+                            <use xlink:href="./img/sprite.svg#light"></use>
+                        </svg>
+                        <p class="offers__text">Освітленням</p>
+                    </li>
+                    <li class="offers__item">
+                        <svg class="offers__icon" aria-hidden="true" viewBox="0 0 48 50" width="48" height="50">
+                            <use xlink:href="./img/sprite.svg#oven"></use>
+                        </svg>
+                        <p class="offers__text">Побутовою технікою</p>
+                    </li>
+                    <li class="offers__item">
+                        <svg class="offers__icon" aria-hidden="true" viewBox="0 0 28 48" width="25" height="44">
+                            <use xlink:href="./img/sprite.svg#door"></use>
+                        </svg>
+                        <p class="offers__text">Дверима</p>
+                    </li>
+                    <li class="offers__item">
+                        <svg class="offers__icon" aria-hidden="true" viewBox="0 0 46 46" width="46" height="46">
+                            <use xlink:href="./img/sprite.svg#wall"></use>
+                        </svg>
+                        <p class="offers__text">Стіновими панелями та підлоговим покриттям</p>
+                    </li>
+                    <li class="offers__item">
+                        <svg class="offers__icon" aria-hidden="true" viewBox="0 0 42 50" width="42" height="50">
+                            <use xlink:href="./img/sprite.svg#brainstorm"></use>
+                        </svg>
+                        <p class="offers__text">Проектуванням</p>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2 class="visually-hidden">про компанію</h2>
+            <div class="container">
+                <p class="about__description text">Проект Рінго Україна - створений виконувати об`єктні задачі
+                    комплексного
+                    меблювання житлових та комерційних приміщень. </p>
+                <ul class="about__list">
+                    <li class="about__item">
+                        <p class="about__text">Наш колектив націлений на результат - вчасно реалізувати проект на
+                            найвищому
+                            рівні. Ми&nbsp;забезпечуємо спокій замовника та вирішуємо будь&#8209;які задачі</p>
+                    </li>
+                    <li class="about__item">
+                        <p class="about__text">Рінго найкращий підрядник прораба, дизайнера, проект-менеджера або
+                            персональний помічник власника бізнесу, квартири чи салону</p>
+                    </li>
+                </ul>
+                <div class="about__img anim-title">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1600px)"
+                            srcset="./img/about1.webp 1x, ./img/about1@2x.webp 2x">
+                        <img class="anim-img" src="./img/about1.jpg" srcset="./img/about1@2x.jpg" loading="lazy"
+                            alt="чоловік у будівельних окулярах">
+                    </picture>
+                </div>
+
+                <div class="about__img anim-title about__img-2">
+                    <picture>
+                        <source type="image/webp" media="(min-width: 1600px)"
+                            srcset="./img/about2.webp 1x, ./img/about2@2x.webp 2x">
+                        <img class="anim-img anim-img-right" src="./img/about2.jpg" srcset="./img/about2@2x.jpg"
+                            loading="lazy" alt="чоловік у будівельних окулярах">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages" id="advantages">
+            <div class="container">
+                <h2 class="advantages__title text-m anim-title">
+                    <span class="anim-show">Наші переваги</span>
+                </h2>
+
+                <div class="advantages__list">
+                    <a class="advantages__item" href="#">
+                        <div class="advantages__box">
+                            <h3 class="advantages__subtitle">Мобільність</h3>
+                            <p class="advantages__description">Проводимо зустрічі на об`єктах в затишних закладах Києва
+                            </p>
+                        </div>
+                        <div class="advantages__cursor">
+                            <div class="advantages__img advantages__img-1"></div>
+                        </div>
+                    </a>
+                    <a class=" advantages__item" href="#">
+                        <div class="advantages__box">
+                            <h3 class="advantages__subtitle">Надійність</h3>
+                            <p class="advantages__description">Система нашої роботи зосереджена на якості та
+                                термінах
+                                завершення проекту
+                            </p>
+                        </div>
+                        <div class="advantages__cursor">
+                            <div class="advantages__img advantages__img-2"></div>
+                        </div>
+                    </a>
+                    <a class="advantages__item" href="#">
+                        <div class="advantages__box">
+                            <h3 class="advantages__subtitle">Якість</h3>
+                            <p class="advantages__description">Виготовляємо виключно з перевірених європейських брендів
+                            </p>
+                        </div>
+                        <div class="advantages__cursor">
+                            <div class="advantages__img advantages__img-3"></div>
+                        </div>
+                    </a>
+                    <a class=" advantages__item" href="#">
+                        <div class="advantages__box">
+                            <h3 class="advantages__subtitle">Професіоналізм
+                            </h3>
+                            <p class="advantages__description">Наша команда - це клуб професіоналів, об`єднаних
+                                в одній
+                                компанії
+                            </p>
+                        </div>
+                        <div class="advantages__cursor">
+                            <div class="advantages__img advantages__img-4"></div>
+                        </div>
+                    </a>
+                    <a class=" advantages__item" href="#">
+                        <div class="advantages__box">
+                            <h3 class="advantages__subtitle">Вигідність </h3>
+                            <p class="advantages__description">Ми відмовились від шоу-руму та офісу на
+                                користь вартості
+                                та мобільності
+                            </p>
+                        </div>
+                        <div class="advantages__cursor">
+                            <div class="advantages__img advantages__img-5"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="connection">
+            <div class="connection__box">
+                <h2 class="connection__title text-m anim-title">
+                    <span class="anim-show">Обговоримо<br> ваш проект?</span>
+                </h2>
+                <p class="connection__text">Заповніть форму і найближчим часом ми зв'яжемося з вами!</p>
+                <form class="connection__form" action="#">
+                    <label class="connection__label" for="name">
+                        <input class="input" type="text" id="name" name="name" placeholder="Ім'я">
+                    </label>
+                    <label class="connection__label" for="tel">
+                        <input class="input" type="tel" id="tel" placeholder="Номер телефону">
+                    </label>
+                    <div class="connection__wrap">
+                        <svg class="connnecion__icon" aria-hidden="true" viewBox="0 0 16 18" width="16" height="18">
+                            <use xlink:href="./img/sprite.svg#doc"></use>
+                        </svg>
+
+                        <input class="connection__file" type="file" id="input__file" name="file"
+                            data-multiple-caption="обрано {count} файла" multiple>
+                        <label for="input__file">
+                            <span class="connection__note"> Прикріпити проект</span>
+                        </label>
+                    </div>
+                    <button class="connection__button button" type="submit">Відправити</button>
+                    <label class="connection__label" for="checkbox">
+                        <input class="connection__checkbox visually-hidden" id="checkbox" type="checkbox" checked>
+                        <span class="connection__mark"></span>
+                        Даю згоду на оброблення персональних даних
+                    </label>
+                </form>
+            </div>
+            <div class="connection__wrapper">
+                <picture>
+                    <source type="image/webp" media="(min-width: 1600px)"
+                        srcset="./img/connection1-large.webp 1x, ./img/connection1-large@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1000px)"
+                        srcset="./img/connection1-desktop.webp 1x, ./img/connection1-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 640px)"
+                        srcset="./img/connection1-tablet.webp 1x, ./img/connection1-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/connection1.webp 1x, ./img/connection1@2x.webp 2x">
+                    <source media="(min-width: 1600px)"
+                        srcset="./img/connection1-large.jpg 1x, ./img/connection1-large@2x.jpg 2x">
+                    <source media="(min-width: 1000px)"
+                        srcset="./img/connection1-desktop.jpg 1x, ./img/connection1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 640px)"
+                        srcset="./img/connection1-tablet.jpg 1x, ./img/connection1-tablet@2x.jpg 2x">
+                    <img class="connection__img" src="./img/connection1.jpg" srcset="./img/connection1@2x.jpg"
+                        loading="lazy" alt="чоловік з жінкою розмовляють за кавою">
+                </picture>
+            </div>
+        </section>
+
+        <section class="stages" id="stages">
+            <div class="container">
+                <h2 class="stages__title text-m anim-title">
+                    <span class="anim-show">Етапи роботи</span>
+                </h2>
+                <ul class="stages__list">
+                    <li class="stages__item">
+                        <h3 class="stages__subtitle">Підписання договору</h3>
+                        <p class="stages__description">Визначаємось з бюджетом, матеріалами та фурнітурою.
+                            Вносимо правки в проект,
+                            підписуємо пакет документів.</p>
+                    </li>
+                    <li class="stages__item">
+                        <h3 class="stages__subtitle text">Виготовлення </h3>
+                        <p class="stages__description">Після підписання договору та визначення термінів, команда Рінго
+                            приступає до
+                            найцікавішого - виробництва!</p>
+                    </li>
+                    <li class="stages__item">
+                        <h3 class="stages__subtitle text">Встановлення</h3>
+                        <p class="stages__description">По готовності виробництва починаємо монтаж на обєкті. У
+                            домовлений час виконуємо доставку та монтаж.</p>
+                    </li>
+                    <li class="stages__item">
+                        <h3 class="stages__subtitle text">Новосілля</h3>
+                        <p class="stages__description">По закінченню робимо перевірку та підписуємо акт закінчення
+                            робівт. </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <h2 class="gallery__title text-m anim-title">
+                <span class="anim-show">Зараз в роботі</span>
+            </h2>
+
+            <div class="swiper gallery__slider">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="gallery__wrapp">
+                            <picture>
+                                <source type="image/webp" media="(min-width: 640px)"
+                                    srcset="./img/gallery1-tablet.webp 1x, ./img/gallery1-tablet@2x.webp 2x">
+                                <source type="image/webp" srcset="./img/gallery1.webp 1x, ./img/gallery1@2x.webp 2x">
+                                <source media="(min-width: 640px)"
+                                    srcset="./img/gallery1-tablet.jpg 1x, ./img/gallery1-tablet@2x.jpg 2x">
+                                <img class="gallery__img" src="./img/gallery1.jpg" srcset="./img/gallery1@2x.jpg"
+                                    alt="">
+                            </picture>
+                        </div>
+                        <p class="gallery__name text">Квартира ЖК Медовий</p>
+                        <span class="gallery__stage">3 етап</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery__wrapp">
+                            <picture>
+                                <source type="image/webp" media="(min-width: 640px)"
+                                    srcset="./img/gallery2-tablet.webp 1x, ./img/gallery2-tablet@2x.webp 2x">
+                                <source type="image/webp" srcset="./img/gallery2.webp 1x, ./img/gallery2@2x.webp 2x">
+                                <source media="(min-width: 640px)"
+                                    srcset="./img/gallery2-tablet.jpg 1x, ./img/gallery2-tablet@2x.jpg 2x">
+                                <img class="gallery__img" src="./img/gallery2.jpg" srcset="./img/gallery2@2x.jpg"
+                                    alt="">
+                            </picture>
+                        </div>
+                        <p class="gallery__name text">Квартира ЖК Оазіс</p>
+                        <span class="gallery__stage">4 етап</span>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery__wrapp">
+                            <picture>
+                                <source type="image/webp" media="(min-width: 640px)"
+                                    srcset="./img/gallery3-tablet.webp 1x, ./img/gallery3-tablet@2x.webp 2x">
+                                <source type="image/webp" srcset="./img/gallery3.webp 1x, ./img/gallery3@2x.webp 2x">
+                                <source media="(min-width: 640px)"
+                                    srcset="./img/gallery3-tablet.jpg 1x, ./img/gallery3-tablet@2x.jpg 2x">
+                                <img class="gallery__img" src="./img/gallery3.jpg" srcset="./img/gallery3@2x.jpg"
+                                    alt="">
+                            </picture>
+                        </div>
+                        <p class="gallery__name text">Квартира ЖК Пташка</p>
+                        <span class="gallery__stage">2 етап</span>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+
+                <div class="swiper-button-prev">
+                    <svg aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
+                        <use class="gallery__icon" xlink:href="./img/sprite.svg#arrow">
+                        </use>
+                    </svg>
+                </div>
+                <div class="swiper-button-next">
+                    <svg aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
+                        <use class="gallery__icon" xlink:href="./img/sprite.svg#arrow">
+                        </use>
+                    </svg>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="gifts">
+            <div class="container gifts__wrapper">
+                <div class="gifts__wrapp">
+                    <picture>
+                        <source type="image/webp" srcset="./img/gift1.webp 1x, ./img/gift1@2x.webp 2x">
+
+                        <img class="gifts__img" src="./img/gift1.png" srcset="./img/gift1@2x.png" alt="тостер">
+                    </picture>
+                    <span class="gifts__note">Подарунок</span>
+                </div>
+                <div class="gifts__box">
+                    <h2 class="gifts__title text-m anim-title">
+                        <span class="anim-show">Рінго роздає<br> подарунки!</span>
+                    </h2>
+                    <p class="gifts__text">При замовленні до нового року, отримай цінний подарунок для свого комфорту
+                    </p>
+                    <a class="gifts__button button modal-link" href="#gift">Хочу подарунок</a>
+                </div>
+                <div class="gifts__wrapp">
+                    <picture>
+
+                        <source type="image/webp" srcset="./img/gift2.webp 1x, ./img/gift2@2x.webp 2x">
+
+                        <img class="gifts__img" src="./img/gift2.png" srcset="./img/gift2@2x.png"
+                            alt="мікрохвильова пічь">
+                    </picture>
+                    <span class="gifts__note">Подарунок</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <div class="container">
+                <h2 class="partners__title text-m anim-title">
+                    <span class="anim-show">Наші партнери</span>
+                </h2>
+
+                <div class="swiper partners__slider">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="partners__box">
+                                <picture>
+                                    <source type="image/webp" media="(min-width: 640px)"
+                                        srcset="./img/brand-franke-tablet.webp 1x, ./img/brand-franke-tablet@2x.webp 2x">
+                                    <source type="image/webp"
+                                        srcset="./img/brand-franke.webp 1x, ./img/brand-franke@2x.webp 2x">
+                                    <source media="(min-width: 640px)"
+                                        srcset="./img/brand-franke-tablet.jpg 1x, ./img/brand-franke-tablet@2x.jpg 2x">
+                                    <img class="partners__img" src="./img/brand-franke.png"
+                                        srcset="./img/brand-franke@2x.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners__box">
+                                <picture>
+
+                                    <source type="image/webp"
+                                        srcset="./img/brand-hafele.webp 1x, ./img/brand-hafele@2x.webp 2x">
+
+                                    <img class="partners__img" src="./img/brand-hafele.png"
+                                        srcset="./img/brand-hafele@2x.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners__box">
+                                <picture>
+                                    <source type="image/webp"
+                                        srcset="./img/brand-emir.webp 1x, ./img/brand-emir@2x.webp 2x">
+                                    <img class="partners__img" src="./img/brand-emir.png"
+                                        srcset="./img/brand-emir@2x.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners__box">
+                                <picture>
+                                    <source type="image/webp"
+                                        srcset="./img/brand-zerkalo.webp 1x, ./img/brand-zerkalo@2x.webp 2x">
+                                    <img class="partners__img" src="./img/brand-zerkalo.png"
+                                        srcset="./img/brand-zerkalo@2x.png" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <svg aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
+                            <use class="partners__icon" xlink:href="./img/sprite.svg#arrow">
+                            </use>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-next">
+                        <svg aria-hidden="true" viewBox="0 0 21 16" width="21" height="16">
+                            <use class="partners__icon" xlink:href="./img/sprite.svg#arrow">
+                            </use>
+                        </svg>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="connection">
+            <div class="connection__box">
+                <h2 class="connection__title text-m anim-title">
+                    <span class="anim-show">Залишилися питання?</span>
+                </h2>
+                <p class="connection__text">Отримай безкоштовну консультацію менеджера та прорахунок проекту </p>
+                <form class="connection__form" action="#">
+                    <label class="connection__label">
+                        <input class="input" type="text" placeholder="Ім'я">
+                    </label>
+                    <label class="connection__label">
+                        <input class="input" type="tel" placeholder="Номер телефону">
+                    </label>
+
+                    <button class="connection__button button" type="submit">Відправити</button>
+                    <label class="connection__label">
+                        <input class="connection__checkbox visually-hidden" type="checkbox" checked>
+                        <span class="connection__mark"></span>
+                        Даю згоду на оброблення персональних даних
+                    </label>
+                </form>
+            </div>
+            <div class="connection__wrapper">
+                <picture>
+                    <source type="image/webp" media="(min-width: 1600px)"
+                        srcset="./img/connection2-large.webp 1x, ./img/connection2-large@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 1000px)"
+                        srcset="./img/connection2-desktop.webp 1x, ./img/connection2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 640px)"
+                        srcset="./img/connection2-tablet.webp 1x, ./img/connection2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/connection2.webp 1x, ./img/connection2@2x.webp 2x">
+                    <source media="(min-width: 1600px)"
+                        srcset="./img/connection2-large.jpg 1x, ./img/connection2-large@2x.jpg 2x">
+                    <source media="(min-width: 1000px)"
+                        srcset="./img/connection2-desktop.jpg 1x, ./img/connection2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 640px)"
+                        srcset="./img/connection2-tablet.jpg 1x, ./img/connection2-tablet@2x.jpg 2x">
+                    <img class="connection__img" src="./img/connection2.jpg" srcset="./img/connection2@2x.jpg"
+                        loading="lazy" alt="жінка розмовляє по телефону">
+                </picture>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__box">
+                    <img class="footer__logo" src="img/logo.svg" width="100" height="44"
+                        alt="логотип компанії Ringo Ukrain.">
+                    <div class="footer__wrap">
+                        <span>Соцмережі:</span>
+                        <ul class="footer__social social">
+                            <li class="social__item">
+                                <a class="social__link" href="https://www.instagram.com/">
+                                    <span class="visually-hidden">Наш інстаграм</span>
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24">
+                                        <use xlink:href="./img/sprite.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link" href="https://m.facebook.com/">
+                                    <span class="visually-hidden">Наш фейсбук</span>
+                                    <svg aria-hidden="true" viewBox="0 0 10 21" width="10" height="21">
+                                        <use xlink:href="./img/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="footer-nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#activities">Основні напрямки</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#stages">Етапи роботи</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#about">Про компанію</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#gallery">Зараз в роботі</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#advantages">Переваги</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link modal-link" href="#partner">Стати партнером</a>
+                    </li>
+                </ul>
+                <div class="footer__contacts">
+                    <a class="header__phone" href="tel:380676615415">
+                        <svg aria-hidden="true" viewBox="0 0 14 22" width="14" height="22">
+                            <use xlink:href="./img/sprite.svg#phone"></use>
+                        </svg>
+                        +380 67661 5415
+                    </a>
+                    <a class="footer__button button" href="#">На каву з менеджером!</a>
+                </div>
+            </div>
+            <div class="accessories">
+                <h3 class="accessories__title">Бренди комплектуючих</h3>
+                <ul class="accessories__list">
+                    <li class="accessories__item">
+                        <a class="accessories__link" href="https://www.franke.com/">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/footer-franke.webp 1x, ./img/footer-franke@2x.webp 2x">
+                                <img class="accessories__img" src="./img/footer-franke.png"
+                                    srcset="./img/footer-franke@2x.png" alt="">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="accessories__item">
+                        <a class="accessories__link" href="https://www.hafele.com/">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/footer-hafele.webp 1x, ./img/footer-hafele@2x.webp 2x">
+                                <img class="accessories__img" src="./img/footer-hafele.png"
+                                    srcset="./img/footer-hafele@2x.png" alt="">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="accessories__item">
+                        <a class="accessories__link" href="https://www.egger.com/">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/footer-egger.webp 1x, ./img/footer-egger@2x.webp 2x">
+                                <img class="accessories__img" src="./img/footer-egger.png"
+                                    srcset="./img/footer-egger@2x.png" alt="">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="accessories__item">
+                        <a class="accessories__link" href="https://linkensystem.com.ua/">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/footer-linken.webp 1x, ./img/footer-linken@2x.webp 2x">
+                                <img class="accessories__img" src="./img/footer-linken.png"
+                                    srcset="./img/footer-linken@2x.png" alt="">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="accessories__item">
+                        <a class="accessories__link" href="https://inoxa.it/">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/footer-inoxa.webp 1x, ./img/footer-inoxa@2x.webp 2x">
+                                <img class="accessories__img" src="./img/footer-inoxa.png"
+                                    srcset="./img/footer-inoxa@2x.png" alt="">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="accessories__item">
+                        <a class="accessories__link" href="https://www.swisspan.ua/">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/footer-sorbes.webp 1x, ./img/footer-sorbes@2x.webp 2x">
+                                <img class="accessories__img" src="./img/footer-sorbes.png"
+                                    srcset="./img/footer-sorbes@2x.png" alt="">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="accessories__item">
+                        <a class="accessories__link" href="https://www.cleaf.it/">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/footer-cleaf.webp 1x, ./img/footer-cleaf@2x.webp 2x">
+                                <img class="accessories__img" src="./img/footer-cleaf.png"
+                                    srcset="./img/footer-cleaf@2x.png" alt="">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="accessories__item">
+                        <a class="accessories__link" href="https://www.samsung.com/">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/footer-samsung.webp 1x, ./img/footer-samsung@2x.webp 2x">
+                                <img class="accessories__img" src="./img/footer-samsung.png"
+                                    srcset="./img/footer-samsung@2x.png" alt="">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="accessories__item">
+                        <a class="accessories__link" href="https://www.blum.com/">
+                            <picture>
+                                <source type="image/webp"
+                                    srcset="./img/footer-blum.webp 1x, ./img/footer-blum@2x.webp 2x">
+                                <img class="accessories__img" src="./img/footer-blum.png"
+                                    srcset="./img/footer-blum@2x.png" alt="">
+                            </picture>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="accessories__copyright">
+                <span>© 2021 Ringo</span>
+                <span>Дизайн сайту</span>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="partner">
+        <div class="modal__body">
+            <div class="modal__content">
+                <button class="modal__close">
+                    <span class="visually-hidden">закрити модальне вікно</span>
+                    <svg aria-hidden="true" viewBox="0 0 27 27" width="27" height="27">
+                        <use xlink:href="./img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <h2 class="modal__title text-m">Хочете стати нашим партнером?</h2>
+                <p class="modal__text">Заповніть форму, і ми звяжемося та обговоримо з вами усі деталі</p>
+                <form action="#">
+                    <label class="connection__label">
+                        <input class="input" type="text" placeholder="Ім'я">
+                    </label>
+                    <label class="connection__label">
+                        <input class="input" type="tel" placeholder="Номер телефону">
+                    </label>
+                    <label class="connection__label" for="comment">
+                        <textarea class="modal__comment input" id="comment" name="comment" rows="3"
+                            placeholder="Коротко про себе"></textarea>
+                    </label>
+                    <button class="connection__button button" type="submit">Відправити</button>
+                    <label class="connection__label">
+                        <input class="connection__checkbox visually-hidden" type="checkbox" checked>
+                        <span class="connection__mark"></span>
+                        Даю згоду на оброблення персональних даних
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="gift">
+        <div class="modal__body">
+            <div class="modal__content">
+                <button class="modal__close">
+                    <span class="visually-hidden">закрити модальне вікно</span>
+                    <svg aria-hidden="true" viewBox="0 0 27 27" width="27" height="27">
+                        <use xlink:href="./img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <h2 class="modal__title text-m">Хочете отримати подарунок?</h2>
+                <p class="modal__text">Заповніть форму, і ми звяжемося та розповімо про умови акції</p>
+                <form action="#">
+                    <label class="connection__label">
+                        <input class="input" type="text" placeholder="Ім'я">
+                    </label>
+                    <label class="connection__label">
+                        <input class="input" type="tel" placeholder="Номер телефону">
+                    </label>
+                    <button class="connection__button button" type="submit">Відправити</button>
+                    <label class="connection__label">
+                        <input class="connection__checkbox visually-hidden" type="checkbox" checked>
+                        <span class="connection__mark"></span>
+                        Даю згоду на оброблення персональних даних
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal__success">
+        <div class="modal__body">
+            <div class="modal__content">
+                <button class="modal__close">
+                    <span class="visually-hidden">закрити модальне вікно</span>
+                    <svg aria-hidden="true" viewBox="0 0 27 27" width="27" height="27">
+                        <use xlink:href="./img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <h2 class="modal__title text-m">Дякуюємо!</h2>
+                <p class="modal__text">Ваша заявка успішно відправилена</p>
+                <a class="modal__button button" href="#">Ок</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.min.js" type="module"></script>
+</body>
+
+</html>

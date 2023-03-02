@@ -1,0 +1,14 @@
+.social__link {
+
+
+    svg {
+        transition: all 0.3s;
+        fill: $brown;
+    }
+
+    &:hover {
+        svg {
+            fill: $dark;
+        }
+    }
+}

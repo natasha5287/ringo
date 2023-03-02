@@ -1,0 +1,149 @@
+.connection {
+    background-color: $green;
+    color: $white;
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.connection__box {
+    padding: 80px 10px 60px;
+
+    @media (min-width: $tablet-width) {
+        padding: 100px 34px 100px 20px;
+        width: 50%;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-right: 130px;
+    }
+
+    @media (min-width: $large-width) {
+        width: 600px;
+        margin-left: auto;
+        padding-left: 0;
+    }
+}
+
+.connection__title {
+    margin-bottom: 20px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.connection__text {
+    margin-bottom: 40px;
+    padding-right: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    opacity: 0.8;
+
+    @media (min-width: $tablet-width) {
+        padding-right: 0;
+        max-width: 305px;
+    }
+}
+
+.connection__label {
+    display: block;
+    margin-bottom: 27px;
+
+    &:has(.connection__mark) {
+        position: relative;
+        padding-left: 25px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+
+        @media (min-width: $tablet-width) {
+            width: 180px;
+        }
+
+        @media (min-width: $desktop-width) {
+            width: initial;
+        }
+    }
+}
+
+
+.connection__wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.connection__wrapper {
+    @media (min-width: $tablet-width) {
+        width: 50%;
+    }
+}
+
+.connection__form {
+    @media (min-width: $tablet-width) {
+        max-width: 305px;
+    }
+}
+
+.connection__file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+    &+label {
+        cursor: pointer;
+    }
+
+}
+
+.connnecion__icon {
+    position: absolute;
+    fill: $white;
+    opacity: 0.5;
+}
+
+.connection__note {
+    padding-left: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    opacity: 0.2;
+}
+
+.connection__button {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.connection__mark {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    border: 2px solid $white;
+}
+
+input[type="checkbox"]:checked+.connection__mark::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    top: 3px;
+    left: 3px;
+    background-color: $white;
+}
+
+.connection__img {
+    display: block;
+    width: 100%;
+}

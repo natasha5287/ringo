@@ -1,0 +1,118 @@
+.gifts {
+    padding: 80px 0;
+    background-color: $grey;
+
+    @media (min-width: $tablet-width) {
+        position: relative;
+        padding: 100px 0;
+
+        &::before,
+        &::after {
+            position: absolute;
+            content: "";
+            width: 227px;
+            height: 100%;
+            border: 1px solid rgba(40, 43, 34, 0.1);
+            top: 0;
+        }
+
+        &::before {
+            left: 20px;
+            border-right: none;
+            border-radius: 100% 0 0 100% / 50% 0 0 50%;
+        }
+
+        &::after {
+            right: 20px;
+            border-left: none;
+            border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+        }
+    }
+
+    @media (min-width: $desktop-width) {
+        padding: 100px 0;
+
+        &::before,
+        &::after {
+            width: 241px;
+        }
+
+        &::before {
+            left: 40px;
+        }
+
+        &::after {
+            right: 40px;
+        }
+    }
+
+    @media (min-width: $large-width) {
+        &::before {
+            left: 260px;
+        }
+
+        &::after {
+            right: 260px;
+        }
+    }
+}
+
+.gifts__wrapper {
+    @media (min-width: $desktop-width) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 80px;
+    }
+
+    @media (min-width: $large-width) {
+        column-gap: 125px;
+    }
+}
+
+.gifts__title {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.gifts__text {
+    text-align: center;
+    padding: 0 10px;
+    line-height: 22px;
+    opacity: 0.8;
+    max-width: 355px;
+    margin: 0 auto 40px;
+}
+
+.gifts__button {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $tablet-width) {
+        min-width: 260px;
+        width: max-content;
+    }
+}
+
+.gifts__wrapp {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+}
+
+.gifts__note {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: $green;
+    font-weight: 500;
+    line-height: 23px;
+    background-image: url("../img/gift.svg");
+    background-repeat: no-repeat;
+}

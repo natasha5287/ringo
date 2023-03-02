@@ -1,0 +1,12 @@
+.button {
+    padding: 22px;
+    font-weight: 700;
+    color: $white;
+    background-color: $brown;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background: #CC9654;
+        box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.05);
+    }
+}
